@@ -1,5 +1,6 @@
-import { count } from 'process';
-import { title } from "process";
+// import { count } from 'process';
+// import { title } from "process";
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 function Form (){
@@ -9,7 +10,7 @@ function Form (){
         title: "transformers one",
         cont:2,
         score: 4.0
-    }
+    };
  
     return (
 
@@ -40,11 +41,14 @@ function Form (){
                                     </select>
                                 </div>
                                 <div className="movies-form-btn-container">
-                                <button className="btn movies-btn" type="submit">SALVAR</button>
+                                <button className="movies-btn" type="submit">SALVAR</button>
                                 </div>
                             </form>
+                           <Link to='/'>
                            
-                                <button className="btn movies-btn mt-3">CANCELAR</button>
+                                <button className="movies-btn mt-3">CANCELAR</button>
+                                
+                           </Link>
 
                             </div>
                         </div>  
