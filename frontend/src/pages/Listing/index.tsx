@@ -1,7 +1,8 @@
+import Pagination from '../../components/Pagination';
 function Listing(){
     return(
-        <h1>Teste do meu ovo</h1>
-    )
+        <Pagination />
+    );
 }
 
 export default Listing;
