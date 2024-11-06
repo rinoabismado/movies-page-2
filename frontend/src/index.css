@@ -9,7 +9,7 @@
 
 :root {
     --bg-body: #242a32;
-    --color-primary: #131119;
+    --color-primary: #131219;
     --text-color: #f4f3f3;
     --text-form: #92929d;
     --star-yellow: #FFBB3a
@@ -18,7 +18,8 @@
 
 html,
 body {
-    background-color: #242a32;
+    background-color: var(--bg-body);
+    --color-primary: #131219;
 }
 
 header {

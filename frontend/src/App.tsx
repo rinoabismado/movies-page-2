@@ -1,8 +1,21 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Listing from '../src/pages/Listing'
+import Form from '../src/pages/Form';
 
 function App() {
   return (
-   <p>testando som 1, 2, 3</p>
-  );
+    <BrowserRouter>
+   <Navbar />
+   <Routes>
+    <Route path='/' element={<Listing />}/>
+    <Route path='/form'>
+    <Route path=':moviesId' element={<Form />}/>
+    </Route>
+    
+   </Routes>
+   </BrowserRouter>
+ );
 }
 
 export default App;
